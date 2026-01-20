@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rutik Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Navigation Bar -->
+ <nav id="navbar">
+    <div class="logo">Rutik</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button onclick="theme()" class="mode">🌙</button>
+
+    <div class="toggle" onclick="openMenu()">☰</div>
+ </nav>
+<!-- HERO -->
+<section id="home" class="hero">
+
+<h1>Hi, I'm Rutik</h1>
+
+<p id="typing"></p>
+
+<!-- BUTTON CONTAINER -->
+<div class="btn-group">
+   <button class="btn">Explore</button>
+   <button class="btn">Contact</button>
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>I am passionate about building websites and learning new technologies.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section  reveal">
+<h2>Skills</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>C++</h3>
+<p>Problem Solving</p>
+</div>
+
+<div class="card">
+<h3>HTML CSS</h3>
+<p>Frontend Design</p>
+</div>
+
+<div class="card">
+<h3>JavaScript</h3>
+<p>Interactivity</p>
+</div>
+
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section  reveal">
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Smart Helmet</h3>
+<p>IoT based safety system</p>
+</div>
+
+<div class="card">
+<h3>Landing Page</h3>
+<p>Interactive Navbar</p>
+</div>
+
+</div>
+</section>
+
+<!-- IMAGE GALLERY -->
+<section id="gallery" class="section reveal">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+   <img src="https://picsum.photos/300/200?1" onclick="openImg(this)">
+   <img src="https://picsum.photos/300/200?2" onclick="openImg(this)">
+   <img src="https://picsum.photos/300/200?3" onclick="openImg(this)">
+   <img src="https://picsum.photos/300/200?4" onclick="openImg(this)">
+
+</div>
+
+</section>
+
+<!-- Preview Box -->
+<div id="preview" onclick="closeImg()">
+   <img id="big">
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="section reveal">
+
+<h2>Testimonials</h2>
+
+<div class="cards">
+
+<div class="card">
+   <h3>Rahul Patil</h3>
+   <p>⭐⭐⭐⭐⭐</p>
+   <p>Rutik created an amazing website with great design and animations.</p>
+</div>
+
+<div class="card">
+   <h3>Anjali Sharma</h3>
+   <p>⭐⭐⭐⭐</p>
+   <p>Very creative and hardworking developer. UI looks professional.</p>
+</div>
+
+<div class="card">
+   <h3>Amit More</h3>
+   <p>⭐⭐⭐⭐⭐</p>
+   <p>Excellent work with interactive navbar and smooth effects.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+   <input type="text" id="name" placeholder="Your Name" required>
+
+   <input type="email" id="email" placeholder="Your Email" required>
+
+   <textarea id="msg" placeholder="Your Message" required></textarea>
+
+   <button type="submit" class="btn">Send Message</button>
+
+</form>
+
+<p id="result"></p>
+
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+
+   <h3>Connect With Me</h3>
+
+   <div class="icons">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Instagram</a>
+   </div>
+
+   <p>© 2024 Rutik Portfolio</p>
+
+</footer>
+
+<button onclick="topFunction()" id="topBtn">⬆</button>
+
+</body>
